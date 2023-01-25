@@ -4,12 +4,9 @@ import MovieCard from "./MovieCard";
 
 const MovieScreen = ({addMovie, movieList, page, setPage, watchlist, removeMovie}) => {
   
-    const decrement = () => {
-    return setPage(page - 1);
-  };
-  const increment = () => {
-    return setPage(page + 1);
-  };
+    const decrement = () => setPage(page - 1);
+  const increment = () => setPage(page + 1);
+  
 
     const movieDisplay = movieList.map((movie, index) => {
     return (
